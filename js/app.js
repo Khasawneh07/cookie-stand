@@ -19,9 +19,11 @@ let seattleBranch = {
     },
     cookiesPurchasedcount: function () {
         for (let i = 0; i < hours.length; i++) {
-          let AmountOfCookies =  this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
-            this.total = this.total + AmountOfCookies;
+          this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
+            this.total = this.total + this.numOfCookiesSold[i];
             //console.log(total);
+            // this.numOfCookiesSoldPerHour.push(Math.ceil(this.randomCustomers[i]*this.avgPerSale));
+            // this.total = this.total + this.numOfCookiesSoldPerHour[i];
         }
     },
     render: function () {
@@ -58,8 +60,8 @@ let Tokyo = {
     },
     cookiesPurchasedcount: function () {
         for (let i = 0; i < hours.length; i++) {
-          let AmountOfCookies =  this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
-            this.total = this.total + AmountOfCookies;
+            this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
+            this.total = this.total + this.numOfCookiesSold[i];
             //console.log(total);
         }
     },
@@ -97,8 +99,8 @@ let Dubai = {
     },
     cookiesPurchasedcount: function () {
         for (let i = 0; i < hours.length; i++) {
-          let AmountOfCookies =  this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
-            this.total = this.total + AmountOfCookies;
+            this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
+            this.total = this.total + this.numOfCookiesSold[i];
             //console.log(total);
         }
     },
@@ -136,8 +138,8 @@ let Paris = {
     },
     cookiesPurchasedcount: function () {
         for (let i = 0; i < hours.length; i++) {
-          let AmountOfCookies =  this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
-            this.total = this.total + AmountOfCookies;
+            this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
+            this.total = this.total + this.numOfCookiesSold[i];
             //console.log(total);
         }
     },
@@ -176,8 +178,8 @@ let Lima = {
     },
     cookiesPurchasedcount: function () {
         for (let i = 0; i < hours.length; i++) {
-          let AmountOfCookies =  this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
-            this.total = this.total + AmountOfCookies;
+            this.numOfCookiesSold.push(Math.ceil(this.randomNnumberOfcustomers[i] * this.avgCookie));
+            this.total = this.total + this.numOfCookiesSold[i];
             //console.log(total);
         }
     },
@@ -222,100 +224,3 @@ Paris.render();
 Lima.customersPerhour();
 Lima.cookiesPurchasedcount();
 Lima.render();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     render: function(){
-//         let MainDiv = document.getElementById('branchLocation');
-//    let LocationSec = document.createElement('section');
-//    MainDiv.appendChild(LocationSec);
-//    let LocName = document.createElement('h2');
-//    LocName.textContent = this.location;
-//    LocationSec.appendChild(LocName);
-//    let LocList = document.createElement('ul');
-//    LocationSec.appendChild (LocList);
-
-//    let AmountCookiesList;
-//    for(let k = 0 ; k < this.AmountsOfCookies.length ; k++ )
-//    {
-//      this.cookiesPurchased = document.createElement('li');
-//      AmountCookiesList.textContent = Hours[k] + ' : ' + this.AmountsOfCookies[k] + ' cookies ';
-//      LocList.appendChild(AmountCookiesList);
-
-//    }
-//    let AmountCookiesList = document.createElement('li');
-//    AmountCookiesList.textContent = ' Total: ' + this.Total + ' cookies.';
-//    LocList.appendChild(AmountCookiesList);
-
-
-// }
-
-// }
-
-// Seattle.customersPerhour();
-// Seattle.cookiesPurchasedcount();
-// Seattle.render();
-
-
-// Render: function ()
-// {
-//    let MainDiv = document.getElementById('branchLocation');
-//    let LocationSec = document.createElement('section');
-//    MainDiv.appendChild(LocationSec);
-//    let LocName = document.createElement('h2');
-//    LocName.textContent = this.location;
-//    LocationSec.appendChild(LocName);
-//    let LocList = document.createElement('ul');
-//    LocationSec.appendChild (LocList);
-
-//    let AmountCookiesList;
-//    for(let k = 0 ; k < this.AmountsOfCookies.length ; k++ )
-//    {
-//      this.cookiesPurchased = document.createElement('li');
-//      AmountCookiesList.textContent = Hours[k] + ' : ' + this.AmountsOfCookies[k] + ' cookies ';
-//      LocList.appendChild(AmountCookiesList);
-
-//    }
-//    let AmountCookiesList = document.createElement('li');
-//    AmountCookiesList.textContent = ' Total: ' + this.Total + ' cookies.';
-//    LocList.appendChild(AmountCookiesList);
-
-
-// }
-// }
