@@ -1,0 +1,39 @@
+#LocationInfoForm
+{
+    background-color: rgba(75, 35, 9, 0.548);
+    color: white;
+    font-family: 'PT Serif', serif;
+    
+}
+
+
+table
+{
+    border: 5px solid rgba(255, 255, 255, 0.829);
+    position: relative;
+    margin-left: 20%;
+    padding: 10px;
+    margin: 20px;
+    columns: 20px;
+    text-align: center;
+    background-color: rgba(87, 46, 12, 0.76);
+    width: 90%;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html
+{
+    background-image: url(https://image.freepik.com/free-photo/wooden-background_24972-623.jpg);
+    color: white;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Helvetica', sans-serif;
+  text-align: center;
+
+}
+
