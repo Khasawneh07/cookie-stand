@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sales</title>
+    <link rel="stylesheet" href="sales.css">
 </head>
 
 <body>
     <header>
-        <main>
-            <h2>Cookies Stand</h2>
-            <form action="Cookies Form"></form>
-            <fieldset>
-                <legend>Cookies Sales</legend>
-                <label for="brnachLocation">Brnach Locatio</label>
-                <input type="text" id="brnachLocation">
-                <br>
-                <label for="maxSales">Max Sales</label>
-                <input type="text" id="maxSales">
-                <br>
-                <label for="minSales">Min Sales</label>
-                <input type="text" id="minSales">
-                <br>
-                <label for="AvgCookies">Avg Cookies</label>
-                <input type="text" id="avgCookies">
-                <br>
-                <input type="submit" value="Submit">
-                
-            </fieldset>
-        </main>
+        <h1>Sales</h1>
     </header>
 
+    <main>
+        <h2>Cookies Stand</h2>
+        <form action="submit" id="LocationInfoForm">
+            <fieldset>
+                <legend> Location Information Form: </legend>
+                <label for="brnachLocation">Location Name:</label>
+                <input type="text" id="brnachLocation" name="brnachLocation">
+                <br>
+                <br>
+
+                <label for="maxSales">The Number of Maximum Customers For The Location: </label>
+                <input type="text" name="maxSales" id="maxSales">
+
+                <br>
+                <br>
+
+                <label for="minSales">The Number of Minimum Customers For The Location:</label>
+                <input type="text" name="minSales" id="minSales">
+
+                <br>
+                <br>
+
+                <label for="AvgCookies">The Number of Cookies Average For the location:</label>
+                <input type="text" name="AvgCookies" id="AvgCookies">
+
+                <br>
+                <br>
+
+                <input type="submit" value="submit">
+
+            </fieldset>
+        </form>
+
+        <div id="maindiv">
+
+        </div>
+
+
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
 </body>
 
-</html>
-    
-</body>
 </html>
